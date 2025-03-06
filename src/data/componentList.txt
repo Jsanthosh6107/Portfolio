@@ -1,0 +1,183 @@
+HERO
+{
+  type: "Hero",
+  data: {
+    heroTitle: "Your Hero Title Here",
+    heroDescription: "Your Hero Description Here"
+  }
+}
+
+SHELF
+{
+  type: "Shelf",
+  data: {
+    headers: ["Header 1", "Header 2", "Header 3"],
+    text: [
+      "First text item goes here.",
+      "Second text item goes here.",
+      "Third text item goes here."
+    ],
+  }
+}
+
+COMPANY GALLERY
+{
+  type: "CompanyGallery",
+  data: {
+    images: [
+      { src: "/images/example1.png", alt: "Image description 1", width: 500, height: 500 },
+      { src: "/images/example2.png", alt: "Image description 2", width: 500, height: 500 },
+      { src: "/images/example3.png", alt: "Image description 3", width: 500, height: 500 }
+    ]
+  }
+}
+
+IMAGETEXT 1
+{
+  type: "ImageText",
+  data: {
+    imageInfo: {
+      src: "/images/example.jpg",
+      alt: "Image description",
+      width: 800,
+      height: 500
+    },
+    textContent: [
+      "First line of text.",
+      "Second line of text.",
+      "Third line of text."
+    ],
+    inverted: false
+  }
+}
+
+
+TILES
+{
+  type: "Tiles",
+  data: {
+    tilesHeader: "Your Tiles Header",
+    tilesTitle: "Your Tiles Title",
+    tiles: [
+      { svg: <WebsiteAttentionIcon />, title: "Tile 1 Title", description: "Tile 1 description." },
+      { svg: <AccessibleIcon />, title: "Tile 2 Title", description: "Tile 2 description." },
+      { svg: <GiftSalesIcon />, title: "Tile 3 Title", description: "Tile 3 description." },
+      { svg: <HotSalesIcon />, title: "Tile 4 Title", description: "Tile 4 description." },
+      { svg: <PurchaseMobileSalesIcon />, title: "Tile 5 Title", description: "Tile 5 description." },
+      { svg: <CartRemoveIcon />, title: "Tile 6 Title", description: "Tile 6 description." }
+    ]
+  }
+}
+
+IMAGETEXT TWO
+{
+  type: "ImageTextTwo",
+  data: {
+    ITTitle: "Your Section Title",
+    ITSubTitle: "Your Subtitle",
+    SVGImage: <ShopSalesIcon />,
+    Title: "Your Title",
+    Description: "Your description text goes here.",
+    ButtonText: "Your Button Text"
+  }
+}
+
+COMPARISON
+{
+  type: "Comparison",
+  data: {
+    headerOne: "Left Column Header",
+    headerTwo: "Right Column Header",
+    listOne: ["Left item 1", "Left item 2", "Left item 3", "Left item 4"],
+    listTwo: ["Right item 1", "Right item 2", "Right item 3", "Right item 4"]
+  }
+}
+
+CARDS
+{
+  type: "Cards",
+  data: {
+    subTitle: "Cards Section Subtitle",
+    title: "Cards Section Title",
+    description: "Cards section description.",
+    cards: [
+      {
+        cardSubtitle: "Card 1 Subtitle",
+        cardTitle: "Card 1 Title",
+        cardDescription: "Card 1 description.",
+        cardStatistics: [
+          { cardNumber: "XX%", cardNumberText: "Statistic 1" },
+          { cardNumber: "XX%", cardNumberText: "Statistic 2" },
+          { cardNumber: "XX%", cardNumberText: "Statistic 3" }
+        ],
+        cardButton: "Button Text",
+        cardButtonURL: "#",
+        imageInfo: {
+          src: "/images/example1.jpg",
+          alt: "Card image description",
+          width: 800,
+          height: 500
+        }
+      },
+      {
+        cardSubtitle: "Card 2 Subtitle",
+        cardTitle: "Card 2 Title",
+        cardDescription: "Card 2 description.",
+        cardStatistics: [
+          { cardNumber: "XX%", cardNumberText: "Statistic 1" },
+          { cardNumber: "XX%", cardNumberText: "Statistic 2" },
+          { cardNumber: "XX%", cardNumberText: "Statistic 3" }
+        ],
+        cardButton: "Button Text",
+        cardButtonURL: "#",
+        imageInfo: {
+          src: "/images/example2.jpg",
+          alt: "Card image description",
+          width: 800,
+          height: 500
+        }
+      }
+    ]
+  }
+}
+
+QUOTES
+{
+  type: "Quotes",
+  data: {
+    quoteList: [
+      { quote: "Inspirational quote 1.", name: "Person 1", business: "Company 1" },
+      { quote: "Inspirational quote 2.", name: "Person 2", business: "Company 2" },
+      { quote: "Inspirational quote 3.", name: "Person 3", business: "Company 3" },
+      { quote: "Inspirational quote 4.", name: "Person 4", business: "Company 4" }
+    ]
+  }
+}
+
+NUMBERS
+{
+  type: "Numbers",
+  data: {
+    numbersList: [
+      { topNumber: "XX", topSymbol: "%", bottomString: "Statistic 1" },
+      { topNumber: "XX", topSymbol: "x", bottomString: "Statistic 2" },
+      { topNumber: "XX", topSymbol: "%", bottomString: "Statistic 3" },
+      { topNumber: "XX", topSymbol: "%", bottomString: "Statistic 4" }
+    ]
+  }
+}
+
+FOOTER
+{
+  type: "Footer",
+  data: {
+    buttonText: "Your Button Text",
+    callToAction: "Your Call to Action",
+    links: [
+      { text: "Link 1", url: "#" },
+      { text: "Link 2", url: "#" },
+      { text: "Link 3", url: "#" }
+    ],
+    copyright: "Your Copyright Text"
+  }
+}
