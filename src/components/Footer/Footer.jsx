@@ -13,7 +13,7 @@ const Footer = ({buttonText = "", callToAction = "", links = [], copyright = ""}
                   <Button text={buttonText} flipColor={false} invert={true} link="/contact"/>
               </SlideIn>
               <SlideIn delay={100}>
-                <h2 className="text-8xl font-semibold uppercase">{callToAction}</h2>
+                <h2 className="text-5xl lg:text-7xl font-semibold uppercase">{callToAction}</h2>
               </SlideIn>
           </div>
       </div>

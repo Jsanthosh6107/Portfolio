@@ -69,6 +69,20 @@ TILES
   }
 }
 
+TILESPROJECTS
+  {
+    type: "TilesProjects",
+    data: {
+      tilesHeader: "Some of what I've done",
+      tilesTitle: "Live Projects you can check out",
+      tiles: [
+        { image: { src: "/images/example1.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
+        { image: { src: "/images/example1.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
+        { image: { src: "/images/example1.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
+      ]
+    }
+  },
+
 IMAGETEXT TWO
 {
   type: "ImageTextTwo",

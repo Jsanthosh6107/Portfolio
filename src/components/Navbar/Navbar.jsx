@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { JacksonLogo } from "@/components/svgs";
+import { InitialsIcon } from "@/components/svgs";
 import Button from "../Button/Button";
 import { usePathname } from "next/navigation";
 import SlideIn from "@/hooks/SlideIn";
@@ -25,7 +25,7 @@ const Navbar = ({ navList = [] }) => {
       <nav className="flex flex-row justify-between items-center x-margin pt-8">
         {/* Left section: Logo */}
         <SlideIn flip={true}>
-          <JacksonLogo fill="black" aria-label="Company Logo" classes="w-28" />
+          <InitialsIcon fill="black" classes="w-20" />
         </SlideIn>
         {/* Center section: Nav links (hidden on small screens) */}
         <SlideIn flip={true} delay={100}>
@@ -50,7 +50,7 @@ const Navbar = ({ navList = [] }) => {
         {/* Right section: Button (hidden on small screens) */}
         <SlideIn flip={true} delay={200}>
           <div className="hidden md:block">
-            <Button text="Contact Us" flipColor={false} link="/contact" />
+            <Button text="Contact Me" flipColor={false} link="/contact" />
           </div>
         </SlideIn>
 
