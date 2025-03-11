@@ -5,58 +5,47 @@ export const homeLayout = [
     type: "HeroFace",
     data: {
       heroImage: { src: "/images/Me4.jpg", alt: "Me", width: 500, height: 500 },
-      heroTitle: "👋 Hey, I'm Josh",
-      heroDescription: "Welcome to my site! I keep everything I'm working on here"
+      heroSpanTitle: "Sculpting Scalable",
+      heroTitle: "Paradigms with Unrelenting Precision",
+      heroDescription: "In an era saturated with transient methodologies and ephemeral trends, I embody an unyielding commitment to engineering digital solutions that are not only architecturally resilient but also meticulously optimized for longevity, efficiency, and aesthetic sophistication.",
+      heroButton: "Engage with Me",
     }
   },
   {
     type: "Tiles",
     data: {
-      tilesHeader: "FullStack Mastery",
-      tilesTitle: "Here's a quick summary of my skills",
+      tilesHeader: "Comprehensive Technological Mastery",
+      tilesTitle: "The Arsenal Behind My Digital Magnum Opuses",
       tiles: [
-        { svg: <NextIcon />, title: "Frontend", description: "React, Next.js, WordPress" },
-        { svg: <NodeJsIcon />, title: "Backend", description: "PHP, NodeJS, Python" },
-        { svg: <PythonIcon />, title: "Software", description: "Plugin, Automation, AI Leverage" }
+        { svg: <NextIcon />, title: "Frontend Eminence", description: "Translating abstract concepts into dynamic, high-performance digital experiences using React, Next.js, and WordPress—ensuring fluidity, responsiveness, and a frictionless user interface." },
+        { svg: <NodeJsIcon />, title: "Backend Supremacy", description: "Engineering sophisticated server-side architectures with PHP, Node.js, and Python—prioritizing efficiency, concurrency, and seamless data orchestration." },
+        { svg: <PythonIcon />, title: "Algorithmic Ingenuity", description: "Pioneering bespoke software solutions, automation protocols, and AI-integrated applications that transcend conventional development paradigms—ushering in a new echelon of computational efficacy." }
       ]
-    }
-  },
-  {
-    type: "ImageTextTwo",
-    data: {
-      ITTitle: "What's my life like?",
-      ITSubTitle: "Ambition . Purpose . Goals",
-      SVGImage: <MountainIcon />,
-      Title: "What's driving me everyday",
-      Description: "I'm constantly moving forward, with a goal of purpose driven results. Every day is a chance for me to learn something new, to create something useful, and to achieve something greater than yesterday.",
-      ButtonText: "What am I up to?"
     }
   },
   {
     type: "TilesProjects",
     data: {
-      tilesHeader: "Recent Work",
-      tilesTitle: "Live Projects you can check out",
+      tilesHeader: "Chronicles of Digital Excellence",
+      tilesTitle: "Concrete Manifestations of My Technical Prowess",
       tiles: [
-        { image: { src: "/images/ARS.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
-        { image: { src: "/images/ARS.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
-        { image: { src: "/images/ARS.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
+        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "ARS Awareness", description: "An intricately crafted satirical web interface delineating the macabre realities of acute radiation syndrome—juxtaposing morbid existentialism with an ironically jovial visual aesthetic." },
+        { image: { src: "/images/SamsPressureWashing.jpg", alt: "Sams Pressure Washing", width: 500, height: 500 } , title: "Sam’s Pressure Washing", description: "A meticulously structured digital presence engineered for a local entrepreneur—imbuing his brand with an authoritative online footprint through precision-crafted UI/UX design." },
+        { image: { src: "/images/PortfolioWebsite.png", alt: "Portfolio Website", width: 500, height: 500 } , title: "Portfolio Website", description: "An autobiographical digital opus encapsulating the breadth of my technological dexterity, interwoven with personal insights and avant-garde development methodologies." },
       ]
     }
   },
   {
     type: "Footer",
     data: {
-      buttonText: "Back to Top",
-      callToAction: "Thanks for stopping by!",
+      buttonText: "Ascend to Apex",
+      callToAction: "Gratitude for Your Intellectual Sojourn",
       links: [
-        { text: "Youtube", url: "#" },
-        { text: "Linkedin", url: "#" },
-        //{ text: "Link 3", url: "#" }
+        { text: "YouTube", url: "#" },
+        { text: "LinkedIn", url: "#" },
       ],
       copyright: "Joshua Santhosh"
     }
   }
-  
   
 ];
