@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TilesProjects = ({tilesHeader = "", tilesTitle = "", tiles = []}) => {
   return (
-    <section className="x-margin my-20" id="benefits">
+    <section className="x-margin my-40" id="benefits">
         <div className="flex flex-col justify-center text-center md:px-[10%] pb-12">
             <SlideIn>
                 <p className="text-xl font-medium">{tilesHeader}</p>
@@ -18,9 +18,9 @@ const TilesProjects = ({tilesHeader = "", tilesTitle = "", tiles = []}) => {
                     <SlideIn
                         key={index}
                         delay={(index * 100) + 200}
-                        classes="w-[90%] md:w-[45%] lg:w-[30%] rounded-[25px] overflow-hidden relative"
+                        classes="w-[90%] md:w-[45%] lg:w-[30%] rounded-t-[25px] overflow-hidden relative"
                     >
-                        <div className="flex flex-row items-center gap-6 pb-4">
+                        <div className="flex flex-row items-center gap-6">
                             <div className="min-w-16">
                                 <Image
                                     src={tile.image.src}
@@ -31,7 +31,7 @@ const TilesProjects = ({tilesHeader = "", tilesTitle = "", tiles = []}) => {
                                 />
                             </div>
                         </div>
-                        <div className="px-8 pb-4">
+                        <div className="px-8 py-6 border-x border-b rounded-b-[25px]">
                             <h3 className="font-medium text-2xl">{tile.title}</h3>
                             <p>{tile.description}</p>
                         </div>

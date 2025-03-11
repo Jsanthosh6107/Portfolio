@@ -35,7 +35,7 @@ export const homeLayout = [
   {
     type: "TilesProjects",
     data: {
-      tilesHeader: "Some of what I've done",
+      tilesHeader: "Recent Work",
       tilesTitle: "Live Projects you can check out",
       tiles: [
         { image: { src: "/images/ARS.png", alt: "Image description 1", width: 500, height: 500 } , title: "Tile 1 Title", description: "Tile 1 description." },
