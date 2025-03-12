@@ -3,10 +3,10 @@ import PagelayoutRenderer from "@/components/PageLayoutRenderer/PageLayoutRender
 import Head from "next/head";
 
 export const metadata = {
-  title: "SEO Optimized Modern Websites At Industry Standards",
-  description: "Upgrade to a modern website for performance, accessibility, and growth",
+  title: "JS Portfolio",
+  description: "My current Portfolio website",
   alternates: {
-    canonical: 'https://jacksontechagency.com',
+    canonical: 'https://jsanthosh.vercel.app',
   }
 };
 

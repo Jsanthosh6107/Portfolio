@@ -16,9 +16,9 @@ const PagelayoutRenderer = ({ layout }) => {
     const renderComponent = (item, index) => {
         switch (item.type) {
             case "Hero":
-                return <Hero key={index} heroTitle={item.data.heroTitle} heroDescription={item.data.heroDescription} />;
+                return <Hero key={index} heroTitle={item.data.heroTitle} heroDescription={item.data.heroDescription}  />;
             case "HeroFace":
-                return <HeroFace key={index} heroTitle={item.data.heroTitle} heroDescription={item.data.heroDescription} heroImage={item.data.heroImage}/>;    
+                return <HeroFace key={index} heroTitle={item.data.heroTitle} heroDescription={item.data.heroDescription} heroImage={item.data.heroImage} heroSpanTitle={item.data.heroSpanTitle} heroButton={item.data.heroButton}/>;    
             case "Shelf":
                 return <Shelf key={index} headers={item.data.headers} text={item.data.text} />
             case "CompanyGallery":
