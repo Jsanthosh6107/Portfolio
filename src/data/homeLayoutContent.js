@@ -27,7 +27,7 @@ export const homeLayout = [
     type: "TilesProjects",
     data: {
       tilesHeader: "Chronicles of Digital Excellence",
-      tilesTitle: "Concrete Manifestations of My Technical Prowess",
+      tilesTitle: "Concrete Manifestations of My Technical Skills",
       tiles: [
         { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "ARS Awareness", description: "An intricately crafted satirical web interface delineating the macabre realities of acute radiation syndrome—juxtaposing morbid existentialism with an ironically jovial visual aesthetic." },
         { image: { src: "/images/SamsPressureWashing.jpg", alt: "Sams Pressure Washing", width: 500, height: 500 } , title: "Sam’s Pressure Washing", description: "A meticulously structured digital presence engineered for a local entrepreneur—imbuing his brand with an authoritative online footprint through precision-crafted UI/UX design." },
