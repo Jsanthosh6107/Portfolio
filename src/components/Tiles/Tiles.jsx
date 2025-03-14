@@ -17,7 +17,7 @@ const Tiles = ({tilesHeader = "", tilesTitle = "", tiles = []}) => {
                     <SlideIn
                         key={index}
                         delay={(index * 100) + 200}
-                        classes="w-[90%] md:w-[45%] lg:w-[30%] border-2 border-gray-400 rounded-[25px] p-8"
+                        classes="w-[90%] md:w-[45%] lg:w-[30%] border-2 border-gray-400 rounded-[25px] p-8 shadow-2xl bg-white"
                     >
                         <div className="flex flex-row items-center gap-6 pb-4">
                             <div className="min-w-16">{tile.svg}</div>

@@ -36,6 +36,17 @@ export const homeLayout = [
     }
   },
   {
+    type: "CurrentWorks",
+    data: {
+      header: "What I'm Doing Right Now",
+      currentWorkProjects: [
+        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Personal Youtube Growth", description: "I'm currently working diligently to create a youtube channel that documents my growth while additionally delivering content in a useful and informative way." },
+        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Backend Skill Development", description: "Currently working to implement NodeJs with a NextJs website with a sequel database to create a functional fullstack website." },
+        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Python Automation", description: "Currently utilizing Python to automate a content farm on youtube that's 100% hand free while running numerous channels with daily uploads." },
+      ]
+    }
+  },
+  {
     type: "Footer",
     data: {
       buttonText: "Ascend to Apex",

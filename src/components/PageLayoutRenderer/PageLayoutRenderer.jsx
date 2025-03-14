@@ -11,6 +11,7 @@ import Quotes from "@/components/Quotes/Quotes";
 import Numbers from "@/components/Numbers/Numbers";
 import Footer from "@/components/Footer/Footer";
 import Cards from "@/components/Cards/Cards";
+import CurrentWorks from "@/components/CurrentWorks/CurrentWorks";
 
 const PagelayoutRenderer = ({ layout }) => {
     const renderComponent = (item, index) => {
@@ -39,6 +40,8 @@ const PagelayoutRenderer = ({ layout }) => {
                 return <Quotes key={index} quoteList={item.data.quoteList} />
             case "Numbers":
                 return <Numbers key={index} numbersList={item.data.numbersList} />
+            case "CurrentWorks":
+                return <CurrentWorks key={index} header={item.data.header} currentWorkProjects={item.data.currentWorkProjects} />
             case "Footer":
                 return <Footer key={index} buttonText={item.data.buttonText} callToAction={item.data.callToAction} links={item.data.links} copyright={item.data.copyright} />
             default:
