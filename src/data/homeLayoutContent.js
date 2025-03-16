@@ -1,37 +1,37 @@
-import { NextIcon, NodeJsIcon, PythonIcon, MountainIcon } from "@/components/svgs";
+import { NextIcon, NodeJsIcon, PythonIcon, CSSIcon, HTMLIcon, JavascriptIcon, ReactIcon, TailwindIcon, VercelIcon, ViteIcon } from "@/components/svgs";
 
 export const homeLayout = [
   {
     type: "HeroFace",
     data: {
       heroImage: { src: "/images/Me4.jpg", alt: "Me", width: 500, height: 500 },
-      heroSpanTitle: "Sculpting Scalable",
-      heroTitle: "Paradigms with Unrelenting Precision",
-      heroDescription: "In an era saturated with transient methodologies and ephemeral trends, I embody an unyielding commitment to engineering digital solutions that are not only architecturally resilient but also meticulously optimized for longevity, efficiency, and aesthetic sophistication.",
-      heroButton: "Engage with Me",
+      heroSpanTitle: "Building Scalable",
+      heroTitle: "Solutions with Absolute Precision",
+      heroDescription: "In a landscape full of shifting trends, I stay focused on delivering digital solutions that are robust, efficient, and built to last.",
+      heroButton: "Let's Connect",
     }
   },
   {
     type: "Tiles",
     data: {
-      tilesHeader: "Comprehensive Technological Mastery",
-      tilesTitle: "The Arsenal Behind My Digital Magnum Opuses",
+      tilesHeader: "Broad Technical Expertise",
+      tilesTitle: "The Tools Behind My Digital Creations",
       tiles: [
-        { svg: <NextIcon />, title: "Frontend Eminence", description: "Translating abstract concepts into dynamic, high-performance digital experiences using React, Next.js, and WordPress—ensuring fluidity, responsiveness, and a frictionless user interface." },
-        { svg: <NodeJsIcon />, title: "Backend Supremacy", description: "Engineering sophisticated server-side architectures with PHP, Node.js, and Python—prioritizing efficiency, concurrency, and seamless data orchestration." },
-        { svg: <PythonIcon />, title: "Algorithmic Ingenuity", description: "Pioneering bespoke software solutions, automation protocols, and AI-integrated applications that transcend conventional development paradigms—ushering in a new echelon of computational efficacy." }
-      ]
-    }
-  },
-  {
-    type: "TilesProjects",
-    data: {
-      tilesHeader: "Chronicles of Digital Excellence",
-      tilesTitle: "Concrete Manifestations of My Technical Skills",
-      tiles: [
-        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "ARS Awareness", description: "An intricately crafted satirical web interface delineating the macabre realities of acute radiation syndrome—juxtaposing morbid existentialism with an ironically jovial visual aesthetic." },
-        { image: { src: "/images/SamsPressureWashing.jpg", alt: "Sams Pressure Washing", width: 500, height: 500 } , title: "Sam’s Pressure Washing", description: "A meticulously structured digital presence engineered for a local entrepreneur—imbuing his brand with an authoritative online footprint through precision-crafted UI/UX design." },
-        { image: { src: "/images/PortfolioWebsite.png", alt: "Portfolio Website", width: 500, height: 500 } , title: "Portfolio Website", description: "An autobiographical digital opus encapsulating the breadth of my technological dexterity, interwoven with personal insights and avant-garde development methodologies." },
+        {
+          svg: <NextIcon />,
+          title: "Frontend Excellence",
+          description: "I transform ideas into high-performance, engaging interfaces using React, Next.js, and WordPress, ensuring responsive design and seamless user experiences."
+        },
+        {
+          svg: <NodeJsIcon />,
+          title: "Backend Mastery",
+          description: "I build robust server-side systems using PHP, Node.js, and Python, focusing on efficiency, concurrency, and seamless data flow."
+        },
+        {
+          svg: <PythonIcon />,
+          title: "Algorithmic Innovation",
+          description: "I create custom software, automation tools, and AI-powered applications that go beyond standard development methods, providing advanced computational capabilities."
+        }
       ]
     }
   },
@@ -40,17 +40,88 @@ export const homeLayout = [
     data: {
       header: "What I'm Doing Right Now",
       currentWorkProjects: [
-        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Personal Youtube Growth", description: "I'm currently working diligently to create a youtube channel that documents my growth while additionally delivering content in a useful and informative way." },
-        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Backend Skill Development", description: "Currently working to implement NodeJs with a NextJs website with a sequel database to create a functional fullstack website." },
-        { image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 } , title: "Python Automation", description: "Currently utilizing Python to automate a content farm on youtube that's 100% hand free while running numerous channels with daily uploads." },
+        {
+          image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 },
+          title: "ARS Awareness",
+          description: "A satirical web interface that explores the grim realities of acute radiation syndrome with a deceptively innocent design.",
+          bulletContent: [
+            "Built with pure vanilla HTML/CSS/JS as a proof of mastery of the fundamentals.",
+            "A 6 page website created for a university exam, it have every pillar of web design.",
+            "Run with vanilla code, it's a testament of my skills to turn even vanilla code into quality."
+          ],
+          icons: [
+            { text: "CSS", icon: <CSSIcon /> },
+            { text: "HTML", icon: <HTMLIcon /> },
+            { text: "Javascript", icon: <JavascriptIcon /> },
+            { text: "Vercel", icon: <VercelIcon /> },
+          ],
+        },
+        {
+          image: { src: "/images/SamsPressureWashing.jpg", alt: "Sams Pressure Washing", width: 500, height: 500 },
+          title: "Sam’s Pressure Washing",
+          description: "A well-structured digital presence for a local entrepreneur, giving their brand a professional online edge through UI/UX design.",
+          bulletContent: [
+            "A React website created for a local business in my hometown.",
+            "Requested as a simple yet modern online presence, this website delivers.",
+            "As my first paid website, I like to turn to this to see how far I've come."
+          ],
+          icons: [
+            { text: "React", icon: <ReactIcon /> },
+            { text: "Javascript", icon: <JavascriptIcon /> },
+            { text: "Tailwind CSS", icon: <TailwindIcon /> },
+            { text: "Vercel", icon: <VercelIcon /> },
+            { text: "Vite", icon: <ViteIcon /> },
+          ],
+        },
+        {
+          image: { src: "/images/PortfolioWebsite.png", alt: "Portfolio Website", width: 500, height: 500 },
+          title: "Portfolio Website",
+          description: "A personal site that highlights my technical range, blended with personal insights and modern development practices.",
+          bulletContent: [
+            "My current best work consisting of my best tools and skills",
+            "Created with industry standard tools and practices for Next.js and React",
+            "Optimized to near perfection for SEO and Speed"
+          ],
+          icons: [
+            { text: "Next.js", icon: <NextIcon /> },
+            { text: "React", icon: <ReactIcon /> },
+            { text: "Javascript", icon: <JavascriptIcon /> },
+            { text: "Vercel", icon: <VercelIcon /> },
+            { text: "Tailwind CSS", icon: <TailwindIcon /> },
+          ],
+        },
+      ]
+    }
+  },
+  {
+    type: "TilesProjects",
+    data: {
+      tilesHeader: "My Current Projects and Goals",
+      tilesTitle: "What I'm Up To Right Now",
+      tiles: [
+        {
+          image: { src: "/images/ARS.png", alt: "ARS", width: 500, height: 500 },
+          title: "Content Creation",
+          description: "I'm actively building a YouTube channel to document my learning journey, while presenting it in an informative, useful format to other developers at the same stage as me. "
+        },
+        {
+          image: { src: "/images/SamsPressureWashing.jpg", alt: "Sams Pressure Washing", width: 500, height: 500 },
+          title: "Backend Mastery",
+          description: "I'm diving deeper into Node.js and Next.js with a SQL database to create a fully functional full-stack website. I'll take the skills I learn there and implement them into this website."
+        },
+        {
+          image: { src: "/images/PortfolioWebsite.png", alt: "Portfolio Website", width: 500, height: 500 },
+          title: "Python Automation",
+          description: "I'm leveraging Python to automate a YouTube content pipeline, running multiple channels with daily uploads and minimal manual work."
+        },
       ]
     }
   },
   {
     type: "Footer",
     data: {
-      buttonText: "Ascend to Apex",
-      callToAction: "Gratitude for Your Intellectual Sojourn",
+      buttonText: "Back To Top",
+      callToAction: "Thank You for Visiting",
       links: [
         { text: "YouTube", url: "#" },
         { text: "LinkedIn", url: "#" },
@@ -58,5 +129,5 @@ export const homeLayout = [
       copyright: "Joshua Santhosh"
     }
   }
-  
 ];
+
