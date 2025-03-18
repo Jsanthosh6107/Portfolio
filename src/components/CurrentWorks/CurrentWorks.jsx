@@ -26,7 +26,6 @@ const CurrentWorks = ({header = "", currentWorkProjects = []}) => {
 						updatedActive = prev.filter(i => i !== index);
 					}
 
-					// Update highest index
 					setHighestIndex(updatedActive.length > 0 ? Math.max(...updatedActive) : 0);
 
 					return updatedActive;
@@ -42,10 +41,14 @@ const CurrentWorks = ({header = "", currentWorkProjects = []}) => {
 
 		return () => observers.forEach(observer => observer?.disconnect());
 	}, []);
+	
 
+	useEffect(() => {
+		
+	}, [isActive]);
 
   return (
-	  <section className="x-margin my-40 animation">
+	  <section className="x-margin my-40 animation" id="projects">
 		  <div className="flex flex-row relative">
 			  <div className="relative flex flex-col pr-20 gap-40 w-[50%] items-center py-40">
 				  <div className="absolute top-0 right-0 h-full w-[2px] bg-gradient-to-b from-purple-400 via-red-500 to-orange-600"></div>
@@ -83,10 +86,10 @@ const CurrentWorks = ({header = "", currentWorkProjects = []}) => {
 								</div>
 								<div className="flex flex-row gap-4 flex-wrap">
 									{currentWorkProjects[highestIndex].icons.map((icon, index) => (
-										<div key={index} className="flex flex-row items-center gap-2 border rounded-[25px] py-2 px-3">
+										<SlideIn delay={index * 100} key={`${highestIndex}-${index}`} classes="flex flex-row items-center gap-2 border rounded-[25px] py-2 px-3">
 											<div className="w-6">{icon.icon}</div>
 											{icon.text}
-										</div>
+										</SlideIn>
 									))}
 								</div>
 							</div>
