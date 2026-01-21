@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@types/nodemailer": "^6.4.17",
-    "next": "15.1.2",
+    "next": "15.1.11",
     "nodemailer": "^6.10.0",
     "pnpm": "^9.15.4",
     "react": "^19.0.0",
